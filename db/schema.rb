@@ -15,22 +15,25 @@ ActiveRecord::Schema.define(version: 2018_08_13_142951) do
   create_table "exercises", force: :cascade do |t|
     t.text "title"
     t.text "description"
-    t.integer "sets"
+    t.integer "sets", default: 1
     t.float "weight"
+    t.integer "user_id"
+    t.integer "workout_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
   create_table "stats", force: :cascade do |t|
-    t.float "wheight"
-    t.float "bodyfat"
-    t.float "height"
-    t.float "shoulders"
-    t.float "chest"
-    t.float "left_bicep"
-    t.float "right_bicep"
-    t.float "right_thigh"
-    t.float "left_thigh"
+    t.float "wheight", default: 1.0
+    t.float "bodyfat", default: 1.0
+    t.float "height", default: 1.0
+    t.float "shoulders", default: 1.0
+    t.float "chest", default: 1.0
+    t.float "left_bicep", default: 1.0
+    t.float "right_bicep", default: 1.0
+    t.float "right_thigh", default: 1.0
+    t.float "left_thigh", default: 1.0
+    t.integer "user_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -48,6 +51,7 @@ ActiveRecord::Schema.define(version: 2018_08_13_142951) do
   create_table "workouts", force: :cascade do |t|
     t.text "title"
     t.text "description"
+    t.integer "user_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
