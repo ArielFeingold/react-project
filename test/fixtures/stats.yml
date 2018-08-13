@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  wheight: 
+  bodyfat: 
+  height: 
+  shoulders: 
+  chest: 
+  left_bicep: 
+  right_bicep: 
+  right_thigh: 
+  left_thigh: 
+
+two:
+  wheight: 
+  bodyfat: 
+  height: 
+  shoulders: 
+  chest: 
+  left_bicep: 
+  right_bicep: 
+  right_thigh: 
+  left_thigh: 
