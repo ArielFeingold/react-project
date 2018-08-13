@@ -3,7 +3,7 @@ class CreateExercises < ActiveRecord::Migration[5.2]
     create_table :exercises do |t|
       t.text :title
       t.text :description
-      t.integer :sets
+      t.integer :sets default: 1
       t.float :weight
 
       t.timestamps
